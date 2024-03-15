@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "918818936829",
+    "project_id": "appbirthdaycake",
+    "storage_bucket": "appbirthdaycake.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918818936829:android:eef68014a152e41d1eab94",
+        "android_client_info": {
+          "package_name": "com.example.appbirthdaycake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918818936829-s70mdu8rqatb1h9r3o60p1nbm57k7odr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBupWS5cd0nStCN4XlmF3-W9L7SCHs_BpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918818936829-s70mdu8rqatb1h9r3o60p1nbm57k7odr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
