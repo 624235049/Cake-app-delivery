@@ -35,8 +35,8 @@ class _HomeShopOwnerState extends State<HomeShopOwner> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.white,
-        selectedItemColor: Colors.blue[200],
-        unselectedItemColor: Colors.blue[50],
+        selectedItemColor: Colors.blue[600],
+        unselectedItemColor: Colors.blue[300],
         iconSize: 20,
         showUnselectedLabels: false,
         currentIndex: currentIndex,
@@ -45,15 +45,15 @@ class _HomeShopOwnerState extends State<HomeShopOwner> {
           BottomNavigationBarItem(
               icon: Icon(Icons.home_filled),
               label: 'Home',
-              backgroundColor: Colors.blue[200]),
+              backgroundColor: Colors.blue[400]),
           BottomNavigationBarItem(
               icon: Icon(Icons.apps_rounded),
               label: 'Confirm',
-              backgroundColor: Colors.blue[200]),
+              backgroundColor: Colors.blue[400]),
           BottomNavigationBarItem(
               icon: Icon(Icons.article_outlined),
               label: 'Profile',
-              backgroundColor: Colors.blue[200]),
+              backgroundColor: Colors.blue[400]),
         ],
       ),
       body: screens[currentIndex],

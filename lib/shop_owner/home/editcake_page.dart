@@ -20,11 +20,11 @@ class EditCakePage extends StatefulWidget {
 class _EditCakePageState extends State<EditCakePage> {
   var priceController = TextEditingController();
   final formKey = GlobalKey<FormState>();
-  int cnSize;
+  dynamic cnSize;
   String cnPrice;
   String cakename , details;
   String cnImages;
-  int cnId;
+  dynamic cnId;
   File file;
 
   @override
@@ -279,7 +279,7 @@ class _EditCakePageState extends State<EditCakePage> {
     );
   }
 
-  Future<Null> confirmEdit() async {
+  Future<dynamic> confirmEdit() async {
     showDialog(
       context: context,
       builder: (context) => SimpleDialog(
@@ -328,7 +328,7 @@ class _EditCakePageState extends State<EditCakePage> {
     );
   }
 
-  Future<Null> editcake() async {
+  Future<dynamic> editcake() async {
     Random random = Random();
     int i = random.nextInt(100000);
     String nameFile = 'No$i.jpg';

@@ -18,7 +18,7 @@ class _HomeShopPageState extends State<HomeShopPage> {
       length: 3, // จำนวนแท็บ
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.blue.shade100,
+          backgroundColor: Colors.blue[300],
           leading: IconButton(
             icon: Icon(
               Icons.arrow_back_ios_new,

@@ -45,7 +45,7 @@ class _FollowMapCustomerPageState extends State<FollowMapCustomerPage> {
     super.initState();
   }
 
-  Future<Null> findLatLng() async {
+  Future<dynamic> findLatLng() async {
     try {
       LocationPermission permission = await Geolocator.checkPermission();
       if (permission == LocationPermission.denied) {
@@ -78,7 +78,7 @@ class _FollowMapCustomerPageState extends State<FollowMapCustomerPage> {
     }
   }
 
-  Future<Null> FindUserWhererider() async {
+  Future<dynamic> FindUserWhererider() async {
     if (userModels.length != 0) {
       userModels.clear();
     }
@@ -98,7 +98,7 @@ class _FollowMapCustomerPageState extends State<FollowMapCustomerPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue.shade100,
+        backgroundColor: Colors.blue[300],
         title: Text(
           "Delivery",
           style: TextStyle(color: Colors.white),

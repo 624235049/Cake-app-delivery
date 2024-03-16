@@ -1,10 +1,10 @@
 class API {
-  static const String BASE_URL = 'http://192.168.1.35:8080';
+  static const String BASE_URL = 'http://192.168.1.140';
   String keyId = 'id';
   String keyType = 'chooseType';
   String keyName = 'name';
 
-//cakegeneral
+//cakegenerals
   static const String CAKE_N = '/flutterapi/src/getCakeAll.php?isAdd=true';
   static const String CN_IMAGE = BASE_URL + '/flutterapi/src/cake/';
   static const String CAKE_SIZE = '/flutterapi/api/cake_size';

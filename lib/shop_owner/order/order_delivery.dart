@@ -139,7 +139,7 @@ class _OrderliveryPageState extends State<OrderliveryPage> {
                             style: ButtonStyle(
                               backgroundColor: MaterialStateProperty.all<Color>(
                                   Colors.blue
-                                      .shade100), // เปลี่ยนสีพื้นหลังเป็นสีแดง
+                                      .shade300), // เปลี่ยนสีพื้นหลังเป็นสีแดง
                               foregroundColor:
                               MaterialStateProperty.all<Color>(Colors.white),
                               // เปลี่ยนสีตัวอักษรเป็นสีขาว
@@ -164,7 +164,7 @@ class _OrderliveryPageState extends State<OrderliveryPage> {
                             style: ButtonStyle(
                               backgroundColor: MaterialStateProperty.all<Color>(
                                   Colors.blue
-                                      .shade100), // เปลี่ยนสีพื้นหลังเป็นสีแดง
+                                      .shade300), // เปลี่ยนสีพื้นหลังเป็นสีแดง
                               foregroundColor:
                               MaterialStateProperty.all<Color>(Colors.white),
                               // เปลี่ยนสีตัวอักษรเป็นสีขาว
