@@ -1,5 +1,5 @@
 class API {
-  static const String BASE_URL = 'http://192.168.1.140';
+  static const String BASE_URL = 'http://192.168.1.35:8080';
   String keyId = 'id';
   String keyType = 'chooseType';
   String keyName = 'name';

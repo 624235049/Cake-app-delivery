@@ -31,8 +31,8 @@ class _HomeBodyShopOwnerState extends State<HomeBodyShopOwner> {
               image: AssetImage('assets/images/preview.png'),
             ),
             gradient: LinearGradient(colors: [
-              Color.fromRGBO(252, 205, 246, 1.0),
-              Color.fromRGBO(226, 231, 241, 1.0),
+              Color.fromRGBO(121, 163, 254, 1),
+              Color.fromRGBO(189, 207, 245, 1),
             ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
           ),
           child: Column(
@@ -53,7 +53,7 @@ class _HomeBodyShopOwnerState extends State<HomeBodyShopOwner> {
                           style: TextStyle(
                               fontFamily: 'Bebas',
                               fontSize: 40,
-                              color: Colors.blue[200]),
+                              color: Color.fromARGB(255, 214, 231, 244)),
                         ),
                         SizedBox(
                           height: 4,
@@ -140,7 +140,7 @@ class _HomeBodyShopOwnerState extends State<HomeBodyShopOwner> {
                               spreadRadius: 1.0),
                         ],
                         image: DecorationImage(
-                          image: AssetImage('assets/images/7025560.png'),
+                          image: AssetImage('assets/images/cake_home_blue.png'),
                           alignment: Alignment.centerRight,
                         ),
                       ),
@@ -221,7 +221,8 @@ class _HomeBodyShopOwnerState extends State<HomeBodyShopOwner> {
                               spreadRadius: 1.0),
                         ],
                         image: DecorationImage(
-                          image: AssetImage('assets/images/imageC.png'),
+                          image:
+                              AssetImage('assets/images/cake_home_blue2.png'),
                           alignment: Alignment.centerRight,
                         ),
                       ),

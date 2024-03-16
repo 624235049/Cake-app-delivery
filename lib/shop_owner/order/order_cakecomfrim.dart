@@ -33,8 +33,8 @@ class _OrderPageState extends State<OrderPage> {
   OrderModel orderModel;
   CUsertable userModel;
   String user_id;
-  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
-
+  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+      FlutterLocalNotificationsPlugin();
 
   @override
   void initState() {
@@ -109,7 +109,9 @@ class _OrderPageState extends State<OrderPage> {
                     fit: BoxFit.cover, // กำหนดวิธีการปรับขนาดของรูป
                   ),
                 ),
-                SizedBox(width: 5,),
+                SizedBox(
+                  width: 5,
+                ),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -119,7 +121,8 @@ class _OrderPageState extends State<OrderPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.w400,
                           fontSize: 16, // กำหนดขนาดตัวอักษรเป็น 16
-                          color: Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
+                          color:
+                              Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
                         ),
                       ),
                       SizedBox(
@@ -130,7 +133,8 @@ class _OrderPageState extends State<OrderPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.w400,
                           fontSize: 16, // กำหนดขนาดตัวอักษรเป็น 16
-                          color: Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
+                          color:
+                              Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
                         ),
                       ),
                       SizedBox(
@@ -141,7 +145,8 @@ class _OrderPageState extends State<OrderPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.w400,
                           fontSize: 16, // กำหนดขนาดตัวอักษรเป็น 16
-                          color: Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
+                          color:
+                              Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
                         ),
                       ),
                       SizedBox(
@@ -152,7 +157,8 @@ class _OrderPageState extends State<OrderPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.w400,
                           fontSize: 16, // กำหนดขนาดตัวอักษรเป็น 16
-                          color: Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
+                          color:
+                              Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
                         ),
                       ),
                       SizedBox(
@@ -163,7 +169,8 @@ class _OrderPageState extends State<OrderPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.w400,
                           fontSize: 16, // กำหนดขนาดตัวอักษรเป็น 16
-                          color: Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
+                          color:
+                              Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
                         ),
                       ),
                       SizedBox(
@@ -174,7 +181,8 @@ class _OrderPageState extends State<OrderPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.w400,
                           fontSize: 16, // กำหนดขนาดตัวอักษรเป็น 16
-                          color: Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
+                          color:
+                              Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
                         ),
                       ),
                       SizedBox(
@@ -185,7 +193,8 @@ class _OrderPageState extends State<OrderPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.w400,
                           fontSize: 16, // กำหนดขนาดตัวอักษรเป็น 16
-                          color: Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
+                          color:
+                              Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
                         ),
                       ),
                       SizedBox(
@@ -196,7 +205,8 @@ class _OrderPageState extends State<OrderPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.w400,
                           fontSize: 16, // กำหนดขนาดตัวอักษรเป็น 16
-                          color: Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
+                          color:
+                              Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
                         ),
                       ),
                       SizedBox(
@@ -207,7 +217,8 @@ class _OrderPageState extends State<OrderPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.w400,
                           fontSize: 16, // กำหนดขนาดตัวอักษรเป็น 16
-                          color: Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
+                          color:
+                              Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
                         ),
                       ),
                       SizedBox(
@@ -220,7 +231,8 @@ class _OrderPageState extends State<OrderPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.w400,
                           fontSize: 16, // กำหนดขนาดตัวอักษรเป็น 16
-                          color: Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
+                          color:
+                              Colors.blue.shade400, // กำหนดสีตัวอักษรเป็นสีดำ
                         ),
                       ),
                       SizedBox(
@@ -255,9 +267,9 @@ class _OrderPageState extends State<OrderPage> {
                             style: ButtonStyle(
                               backgroundColor: MaterialStateProperty.all<Color>(
                                   Colors.blue
-                                      .shade100), // เปลี่ยนสีพื้นหลังเป็นสีแดง
-                              foregroundColor:
-                                  MaterialStateProperty.all<Color>(Colors.white),
+                                      .shade400), // เปลี่ยนสีพื้นหลังเป็นสีแดง
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
                               // เปลี่ยนสีตัวอักษรเป็นสีขาว
                             ),
                             onPressed: () {
@@ -277,8 +289,8 @@ class _OrderPageState extends State<OrderPage> {
                               backgroundColor: MaterialStateProperty.all<Color>(
                                   Colors.red
                                       .shade400), // เปลี่ยนสีพื้นหลังเป็นสีแดง
-                              foregroundColor:
-                                  MaterialStateProperty.all<Color>(Colors.white),
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
                               // เปลี่ยนสีตัวอักษรเป็นสีขาว
                             ),
                             onPressed: () {
@@ -399,14 +411,16 @@ class _OrderPageState extends State<OrderPage> {
     String id = orderModels[index].userId;
     String url =
         '${API.BASE_URL}/flutterapi/src/getUserriderWhereId.php?isAdd=true&id=$id';
-    const AndroidNotificationDetails androidPlatformChannelSpecifics = AndroidNotificationDetails(
+    const AndroidNotificationDetails androidPlatformChannelSpecifics =
+        AndroidNotificationDetails(
       'your_channel_id',
       'your_channel_name',
       importance: Importance.max,
       priority: Priority.high,
       ticker: 'ticker',
     );
-    const NotificationDetails platformChannelSpecifics = NotificationDetails(android: androidPlatformChannelSpecifics);
+    const NotificationDetails platformChannelSpecifics =
+        NotificationDetails(android: androidPlatformChannelSpecifics);
     await flutterLocalNotificationsPlugin.show(
       0,
       'ได้แจ้งยืนยันการสั่งออเดอร์ที่${orderModels[index].orderId}แล้ว',
@@ -421,9 +435,11 @@ class _OrderPageState extends State<OrderPage> {
         userModel = CUsertable.fromJson(item);
         String tokenUser = userModel.token;
         print('tokenshop ====> $tokenUser');
-        String title = "คุณ ${userModel.name} ทางร้านได้ยืนยันการสั่งซื้อของคุณแล้ว";
+        String title =
+            "คุณ ${userModel.name} ทางร้านได้ยืนยันการสั่งซื้อของคุณแล้ว";
         String body = "ทางร้านกำลังดำเนินการทำเค้ก";
-        String urlsendToken = "${API.BASE_URL}/flutterapi/src/notification.php?isAdd=true&token=$tokenUser&title=$title&body=$body";
+        String urlsendToken =
+            "${API.BASE_URL}/flutterapi/src/notification.php?isAdd=true&token=$tokenUser&title=$title&body=$body";
         sendNotificationToShop(urlsendToken);
       }
     });
@@ -433,14 +449,16 @@ class _OrderPageState extends State<OrderPage> {
     String id = orderModels[index].userId;
     String url =
         '${API.BASE_URL}/flutterapi/src/getUserriderWhereId.php?isAdd=true&id=$id';
-    const AndroidNotificationDetails androidPlatformChannelSpecifics = AndroidNotificationDetails(
+    const AndroidNotificationDetails androidPlatformChannelSpecifics =
+        AndroidNotificationDetails(
       'your_channel_id',
       'your_channel_name',
       importance: Importance.max,
       priority: Priority.high,
       ticker: 'ticker',
     );
-    const NotificationDetails platformChannelSpecifics = NotificationDetails(android: androidPlatformChannelSpecifics);
+    const NotificationDetails platformChannelSpecifics =
+        NotificationDetails(android: androidPlatformChannelSpecifics);
     await flutterLocalNotificationsPlugin.show(
       0,
       'ได้แจ้งยกเลิกการสั่งออเดอร์ที่ ${orderModels[index].orderId}แล้ว',
@@ -457,7 +475,8 @@ class _OrderPageState extends State<OrderPage> {
         print('tokenshop ====> $tokenUser');
         String title = "ขออภัยในความไม่สะดวกทางร้านได้ยกเลิกออเดอร์ของคุณ";
         String body = "กรุณาติดต่อทงร้านหรือกดสั่งซื้อใหม่อีกครั้ง";
-        String urlsendToken = "${API.BASE_URL}/flutterapi/src/notification.php?isAdd=true&token=$tokenUser&title=$title&body=$body";
+        String urlsendToken =
+            "${API.BASE_URL}/flutterapi/src/notification.php?isAdd=true&token=$tokenUser&title=$title&body=$body";
         sendNotificationToShop(urlsendToken);
       }
     });
@@ -466,6 +485,6 @@ class _OrderPageState extends State<OrderPage> {
   Future<Null> sendNotificationToShop(String urlsendToken) async {
     await Dio().get(urlsendToken).then(
           (value) => print('notification Success'),
-    );
+        );
   }
 }
