@@ -72,8 +72,8 @@ class _SignaturePageState extends State<SignaturePage> {
                     foregroundColor:
                         MaterialStateProperty.all<Color>(Colors.white)),
                 onPressed: () async {
-                  ui.Image image =
-                  await _signaturePadKey.currentState.toImage(pixelRatio: 3.0);
+                  ui.Image image = await _signaturePadKey.currentState
+                      .toImage(pixelRatio: 3.0);
                   ByteData byteData = await image.toByteData(
                     format: ui.ImageByteFormat.png,
                   );
@@ -82,7 +82,7 @@ class _SignaturePageState extends State<SignaturePage> {
                     bool isEmpty = _isSignatureEmpty(imageData);
                     if (!isEmpty) {
                       Uint8List resizedImageData =
-                      await _resizeImage(imageData, 800, 800);
+                          await _resizeImage(imageData, 800, 800);
                       await _saveSignature(resizedImageData);
                     } else {
                       print('Signature is empty');
@@ -99,17 +99,18 @@ class _SignaturePageState extends State<SignaturePage> {
   }
 
   Future<Uint8List> _resizeImage(
-      Uint8List imageData,
-      int maxWidth,
-      int maxHeight,
-      ) async {
+    Uint8List imageData,
+    int maxWidth,
+    int maxHeight,
+  ) async {
     img.Image image = img.decodeImage(imageData);
     img.Image resizedImage = img.copyResize(
       image,
       width: maxWidth,
       height: maxHeight,
     );
-    Uint8List resizedImageData = Uint8List.fromList(img.encodePng(resizedImage));
+    Uint8List resizedImageData =
+        Uint8List.fromList(img.encodePng(resizedImage));
     return resizedImageData;
   }
 
@@ -125,13 +126,13 @@ class _SignaturePageState extends State<SignaturePage> {
   }
 
   Future<void> _saveSignature(Uint8List imageData) async {
-    String fileName = DateTime.now().toIso8601String();
+    String fileName = 'signature${DateTime.now().millisecondsSinceEpoch}.png';
     String url = '${API.BASE_URL}/flutterapi/src/savesignature.php';
     try {
       // สร้างไฟล์ MultipartFile จาก Uint8List โดยใช้ http_parser
       MultipartFile file = MultipartFile.fromBytes(
         imageData,
-        filename: '$fileName.png',
+        filename: fileName,
         contentType: MediaType('image', 'png'),
       );
 
@@ -143,8 +144,9 @@ class _SignaturePageState extends State<SignaturePage> {
 
       if (response.statusCode == 200) {
         // บันทึกลายเซ็นลงในฐานข้อมูลโดยใช้ dio
-        String path = '${API.BASE_URL}/flutterapi/src/addSignature.php?isAdd=true&snt_imge=$fileName.png';
-        Response dioResponse = await Dio().get(path);
+        String path =
+            '${API.BASE_URL}/flutterapi/src/addSignature.php?isAdd=true&snt_imge=$fileName.png';
+        Response dioResponse = await Dio().post(path);
         if (dioResponse.statusCode == 200) {
           print('Saved signature: $fileName');
           Navigator.pop(context);
@@ -152,7 +154,9 @@ class _SignaturePageState extends State<SignaturePage> {
             context: context,
             builder: (BuildContext context) {
               return AlertDialog(
-                title: Text('สำเร็จแล้ว',),
+                title: Text(
+                  'สำเร็จแล้ว',
+                ),
                 content: Text('บันทึกลายเซ็นเรียบร้อยแล้ว'),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
@@ -178,6 +182,4 @@ class _SignaturePageState extends State<SignaturePage> {
       print('Failed to save signature: $e');
     }
   }
-
-
 }
