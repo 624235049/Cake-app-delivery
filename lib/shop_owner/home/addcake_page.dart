@@ -123,10 +123,6 @@ class _AddCakePageState extends State<AddCakePage> {
                   child: TextFormField(
                     controller: namecontroller,
                     keyboardType: TextInputType.text,
-                    inputFormatters: [
-                      FilteringTextInputFormatter.allow(RegExp(
-                          '[ก-๙เแโใไ่ิึี้ื่้๊๋์ฺุู฿]')), // อนุญาตให้ป้อนตัวอักษรภาษาไทย
-                    ],
                     decoration: InputDecoration(
                       labelText: 'CakeName',
                       hintText: 'Enter CakeName',
