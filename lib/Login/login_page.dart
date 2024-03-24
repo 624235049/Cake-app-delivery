@@ -69,10 +69,10 @@ class _LoginPageState extends State<LoginPage> {
                 Container(
                   child: Center(
                     child: Text(
-                      'Welcome ',
+                      'Boat bakery Welcome ',
                       style: TextStyle(
                           color: Colors.white,
-                          fontSize: 50,
+                          fontSize: 32,
                           fontFamily: 'Oleo'),
                     ),
                   ),
@@ -150,12 +150,13 @@ class _LoginPageState extends State<LoginPage> {
                   onPressed: () async {
                     final username = _usernameController.text;
                     final password = _passwordController.text;
-                    if(username.isNotEmpty && password.isNotEmpty) {
-                    checkAuthen();
-                    SharedPreferences prefs =
-                        await SharedPreferences.getInstance();
-                    prefs.setString(AppSetting.userNameSetting, username);
-                    prefs.setString(AppSetting.passwordSetting, password);}
+                    if (username.isNotEmpty && password.isNotEmpty) {
+                      checkAuthen();
+                      SharedPreferences prefs =
+                          await SharedPreferences.getInstance();
+                      prefs.setString(AppSetting.userNameSetting, username);
+                      prefs.setString(AppSetting.passwordSetting, password);
+                    }
                   },
                   child: Text('Login',
                       style: TextStyle(

@@ -24,59 +24,59 @@ class _ProFileShopPageState extends State<ProFileShopPage> {
             SizedBox(
               height: 150,
             ),
-            Image.asset('assets/images/logo.jpg'),
-            SizedBox(
-              height: 30,
+            Image.asset(
+              'assets/images/boat_bakery.png',
+              height: 400,
+              width: MediaQuery.of(context).size.width,
+              fit: BoxFit.cover,
             ),
-            Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    //name
-                    SizedBox(
-                      height: 90,
-                    ),
-                    //message
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: ListTile(
-                        leading: GestureDetector(
-                          onTap: () {
-                            signOutProcess(context);
-                          },
-                          child: Container(
-                            width: 50,
-                            height: 50,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100),
-                                color: Colors.blue.shade50),
-                            child: Icon(
-                              Icons.logout,
-                              size: 25,
-                              color: Colors.red,
-                            ),
-                          ),
-                        ),
-                        title: Text('LOG OUT'),
-                        trailing: Container(
+            SingleChildScrollView(
+              child: Column(
+                children: [
+                  //name
+                  SizedBox(
+                    height: 90,
+                  ),
+                  //message
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ListTile(
+                      leading: GestureDetector(
+                        onTap: () {
+                          signOutProcess(context);
+                        },
+                        child: Container(
                           width: 50,
                           height: 50,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(100),
-                              color: Colors.grey.shade200),
+                              color: Colors.blue.shade50),
                           child: Icon(
-                            Icons.outbond_outlined,
-                            size: 20,
-                            color: Colors.grey,
+                            Icons.logout,
+                            size: 25,
+                            color: Colors.red,
                           ),
                         ),
                       ),
+                      title: Text('LOG OUT'),
+                      trailing: Container(
+                        width: 50,
+                        height: 50,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100),
+                            color: Colors.grey.shade200),
+                        child: Icon(
+                          Icons.outbond_outlined,
+                          size: 20,
+                          color: Colors.grey,
+                        ),
+                      ),
                     ),
-                    SizedBox(
-                      height: 15,
-                    ),
-                  ],
-                ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                ],
               ),
             ),
           ],

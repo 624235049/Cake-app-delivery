@@ -413,28 +413,28 @@ class _CartBodyState extends State<CartBody> {
                 ),
                 Column(
                   children: [
-                    Container(
-                      margin: EdgeInsets.only(bottom: 20, right: 20),
-                      height: 50,
-                      width: 150,
-                      child: ElevatedButton.icon(
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.blue.shade200,
-                        ),
-                        onPressed: () {
-                          orderThread();
-                          sendNotification();
-                        },
-                        label: Text(
-                          'ชำระเงินปลายทาง',
-                          style: TextStyle(color: Colors.white),
-                        ),
-                        icon: Icon(
-                          Icons.add_shopping_cart_sharp,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
+                    // Container(
+                    //   margin: EdgeInsets.only(bottom: 20, right: 20),
+                    //   height: 50,
+                    //   width: 150,
+                    //   child: ElevatedButton.icon(
+                    //     style: ElevatedButton.styleFrom(
+                    //       primary: Colors.blue.shade200,
+                    //     ),
+                    //     onPressed: () {
+                    //       orderThread();
+                    //       sendNotification();
+                    //     },
+                    //     label: Text(
+                    //       'ชำระเงินปลายทาง',
+                    //       style: TextStyle(color: Colors.white),
+                    //     ),
+                    //     icon: Icon(
+                    //       Icons.add_shopping_cart_sharp,
+                    //       color: Colors.white,
+                    //     ),
+                    //   ),
+                    // ),
                     Container(
                       margin: EdgeInsets.only(bottom: 20, right: 20),
                       height: 50,
