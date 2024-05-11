@@ -466,12 +466,11 @@ class _CakeDetailState extends State<CakeDetail> {
     );
   }
 
-  //select Calender dd/mm/yyyy
   void selectDate(BuildContext context) async {
     final DateTime picked = await showDatePicker(
       context: context,
       initialDate: _selectedDate,
-      firstDate: DateTime(1900),
+      firstDate: DateTime.now(), // วันที่เริ่มต้นคือวันปัจจุบัน
       lastDate: DateTime(2100),
     );
 

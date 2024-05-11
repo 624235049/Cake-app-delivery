@@ -240,7 +240,7 @@ class _LoginPageState extends State<LoginPage> {
             context: context,
             builder: (BuildContext context) {
               return AlertDialog(
-                title: Text("Password ผิด กรุณาลองใหม่อีกครั้ง"),
+                title: Text("เข้าสู่ระบบสำเร็จ"),
                 actions: [
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
@@ -259,7 +259,8 @@ class _LoginPageState extends State<LoginPage> {
         }
       }
     } catch (e) {
-      normalDialog(context, 'Password ผิด กรุณาลองใหม่อีกครั้ง ค่ะ');
+      normalDialog(
+          context, 'Username หรือ Password ผิด กรุณาลองใหม่อีกครั้ง ค่ะ');
     }
   }
 
